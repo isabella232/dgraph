@@ -31,8 +31,8 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-const (
-	graphqlURL = "http://localhost:8180/graphql"
+var (
+	graphqlURL = "http://"+ testutil.SockAddrHttp +"/graphql"
 )
 
 var (
